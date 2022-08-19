@@ -28,7 +28,7 @@ document.querySelectorAll(".nav-link").forEach(anchor => {
 
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {
-    threshold: 0.9,
+    threshold: 0.4,
     rootMargin: "0px 0px -50px 0px"
 };
 
