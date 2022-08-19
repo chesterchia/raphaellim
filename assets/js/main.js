@@ -1,29 +1,29 @@
-if ($(window).width() >= 600) {
-    var body = document.body,
-        scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-        height = scrollWrap.getBoundingClientRect().height - 1,
-        speed = 0.05;
-} else {
-    var body = document.body,
-        scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-        height = scrollWrap.getBoundingClientRect().height - 1,
-        speed = 1;
-}
+// if ($(window).width() >= 600) {
+//     var body = document.body,
+//         scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+//         height = scrollWrap.getBoundingClientRect().height - 1,
+//         speed = 0.05;
+// } else {
+//     var body = document.body,
+//         scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+//         height = scrollWrap.getBoundingClientRect().height - 1,
+//         speed = 1;
+// }
 
-var offset = 0;
+// var offset = 0;
 
-body.style.height = Math.floor(height) + "px";
+// body.style.height = Math.floor(height) + "px";
 
-function smoothScroll() {
-    offset += (window.pageYOffset - offset) * speed;
+// function smoothScroll() {
+//     offset += (window.pageYOffset - offset) * speed;
 
-    var scroll = "translateY(-" + offset + "px) translateZ(0)";
-    scrollWrap.style.transform = scroll;
+//     var scroll = "translateY(-" + offset + "px) translateZ(0)";
+//     scrollWrap.style.transform = scroll;
 
-    callScroll = requestAnimationFrame(smoothScroll);
-}
+//     callScroll = requestAnimationFrame(smoothScroll);
+// }
 
-smoothScroll();
+// smoothScroll();
 
 
 document.querySelectorAll(".nav-link").forEach(anchor => {

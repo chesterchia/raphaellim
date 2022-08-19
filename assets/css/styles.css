@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap');
 
+
 html {
     overflow-x: hidden;
 }
@@ -16,13 +17,13 @@ body {
     background: rgb(20, 20, 20);
 }
 
-.smooth-scroll-wrapper {
+/* .smooth-scroll-wrapper {
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
     overflow: hidden;
-}
+} */
 
 .navbar {
     font-family: 'Nanum Gothic', sans-serif;
@@ -177,7 +178,9 @@ footer {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-family: 1vw;
+    padding-bottom: 5%;
 }
+
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;
