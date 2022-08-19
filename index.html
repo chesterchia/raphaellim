@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOOTSTRAP CSS ==========-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Raphael Lim</title>
+</head>
+
+<body>
+    <div class="smooth-scroll-wrapper">
+    <!--========== NAVBAR ==========-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <span class="navbar-brand">RAPHAEL LIM</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#footer">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="video-container">
+        <video autoplay muted loop>
+            <source src="./assets/img/reel.mp4" type="video/mp4" />
+        </video>
+        <div id="title">
+            Entertaining and inspiring the world through the beauty of filmmaking
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-around" id="about">
+        <div class="container fade-in" id="scope">
+            <p>Freelance Videographer</p>
+            <p>Grip</p>
+        </div>
+        <div class="container fade-in" id="para">
+            A graduate from Film, Sound and Video from the School of Film and Media Studies at Ngee Ann Polytechnic, I
+            am proficient in working with grip and electrics equipment, and experienced with camera operation,
+            particularly the Sony system. I am also skilled in Adobe Photoshop and Premiere Pro.
+        </div>
+    </div>
+
+    <div id="featured-container">
+        <div class="d-flex justify-content-around featured fade-in" style="padding-top: 5%">
+            <div class="container" id="trailer">
+                <video controls poster="./assets/img/thumb_OLT.jpg">
+                    <source src="./assets/img/OLT Trailer.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="container" id="details">
+                <p class="feature">Short Film:</p>
+                <p class="film">One Last Time</p>
+                <p class="role">Writer, Director</p>
+                <p class="description">An old man attempts to revive his comatose wife by reminiscing their past
+                    together.
+                </p>
+                <a href="https://youtu.be/4KRt92MGtGU" target="_blank">
+                    <button type="button" class="btn btn-warning">SEE FULL FILM</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around featured fade-in">
+            <div class="container" id="trailer">
+                <video controls poster="./assets/img/thumb_murphy.jpg">
+                    <source src="./assets/img/Murphy's Trailer.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="container" id="details">
+                <p class="feature">Short Film:</p>
+                <p class="film">Murphy's</p>
+                <p class="role">Writer</p>
+                <p class="description">A down-and-out musician struggles to make ends meet. A chance encounter with a
+                    group
+                    of like-minded musicians working at a cafe grants him an opportunity to put his skills to good use.
+                </p>
+                <a href="https://youtu.be/4KRt92MGtGU" target="_blank">
+                    <button type="button" class="btn btn-warning">SEE FULL FILM</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around featured fade-in">
+            <div class="container" id="trailer">
+                <video controls poster="./assets/img/thumb_BV.jpg">
+                    <source src="./assets/img/BV Trailer 2.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="container" id="details">
+                <p class="feature">Short Film:</p>
+                <p class="film">Bullet for Vengeance</p>
+                <p class="role">Writer, Director</p>
+                <p class="description">A vigilante police officer copes with his past mistakes. Meanwhile, a recently
+                    released drug trafficker seeks revenge against the police officer for an injustice. Out soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="videos-container">
+        <span class="fade-in" id="span">Property Videos</span>
+        <div class="container container-slide">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                            <div class="video-player" id="player1" data-video-id="JmVLj49MXDM?autoplay=0"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                            <div class="video-player" id="player2" data-video-id="75uPBsZFPww?autoplay=0"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                            <div class="video-player" id="player3" data-video-id="xm6uwglTrO8?autoplay=0"></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <footer id="footer">
+            raphaelim06@gmail.com
+        </footer>
+    </div>
+    </div>
+    <!--========== JS LIBRARIES ==========-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--========== MAIN.JS ==========-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

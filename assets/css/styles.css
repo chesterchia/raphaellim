@@ -1,0 +1,188 @@
+/*========== GOOGLE FONTS ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(20, 20, 20);
+}
+
+.smooth-scroll-wrapper {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    font-family: 'Nanum Gothic', sans-serif;
+    background: #141414;
+}
+
+.navbar-brand {
+    font-family: 'Raleway', serif;
+    font-size: 25px;
+}
+
+.nav-item {
+    font-size: 15px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav>li {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#video-container {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+#video-container>video {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 30%;
+    font-size: 2vw;
+}
+
+#about {
+    margin-top: -1%;
+    background-color: white;
+}
+
+#scope,
+#para {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#scope {
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#para {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+#trailer {
+    width: 60%;
+    padding-left: 5%;
+}
+
+#trailer>video {
+    width: 100%;
+    height: auto;
+}
+
+#details {
+    width: 40%;
+    padding-right: 5%;
+}
+
+#details>p {
+    margin: 0;
+}
+
+.featured {
+    color: white;
+    padding-top: 10%;
+}
+
+.feature {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+.film {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#details > a > button {
+    margin-top: 5%;
+    font-family: 'Archivo', sans-serif;
+}
+
+#videos-container {
+    padding-top: 15%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#videos-container > span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.container-slide {
+    margin-top: 5%;
+}
+
+footer {
+    margin-top: 5%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 1vw;
+}
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
