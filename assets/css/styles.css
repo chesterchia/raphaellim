@@ -187,3 +187,34 @@ footer {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .d-flex {
+        display: block !important; 
+    }
+
+    #para {
+        padding-top: 0;
+        padding-bottom: 10%;
+    }
+
+    #scope {
+        padding-bottom: 0;
+    }
+
+    #trailer, #details {
+        width: 90%;
+    }
+
+    .feature {
+        font-size: 20px;
+    }
+
+    .film {
+        font-size: 30px;
+    }
+
+    .role, .description {
+        font-size: 15px;
+    }
+}
