@@ -1,7 +1,14 @@
-const body = document.body,
-    scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0], 
-    height = scrollWrap.getBoundingClientRect().height - 1,
-    speed = 0.05;
+if ($(window).width() >= 600) {
+    var body = document.body,
+        scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+        height = scrollWrap.getBoundingClientRect().height - 1,
+        speed = 0.05;
+} else {
+    var body = document.body,
+        scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+        height = scrollWrap.getBoundingClientRect().height - 1,
+        speed = 1;
+}
 
 var offset = 0;
 
@@ -18,6 +25,7 @@ function smoothScroll() {
 
 smoothScroll();
 
+
 document.querySelectorAll(".nav-link").forEach(anchor => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
@@ -33,7 +41,7 @@ const appearOptions = {
 };
 
 const appearOnScroll = new IntersectionObserver(
-    function(entries, appearOnScroll) {
+    function (entries, appearOnScroll) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 return;
@@ -42,7 +50,7 @@ const appearOnScroll = new IntersectionObserver(
                 appearOnScroll.unobserve(entry.target);
             }
         })
-    }, 
+    },
     appearOptions
 );
 
