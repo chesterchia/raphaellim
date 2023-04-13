@@ -81,11 +81,15 @@ body {
     background-color: white;
 }
 
-#scope,
-#para {
+#scope {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+#para {
+    display: flex;
+    align-items: center;
 }
 
 #scope {
@@ -108,22 +112,22 @@ body {
     opacity: 1;
 }
 
-#trailer {
+.trailer {
     width: 60%;
     padding-left: 5%;
 }
 
-#trailer>video {
+.trailer>video {
     width: 100%;
     height: auto;
 }
 
-#details {
+.details {
     width: 40%;
     padding-right: 5%;
 }
 
-#details>p {
+.details>p {
     margin: 0;
 }
 
@@ -152,7 +156,7 @@ body {
     font-size: 20px;
 }
 
-#details > a > button {
+.details > a > button {
     margin-top: 5%;
     font-family: 'Archivo', sans-serif;
 }
@@ -205,7 +209,7 @@ footer {
         padding-bottom: 0;
     }
 
-    #trailer, #details {
+    .trailer, .details {
         width: 90%;
     }
 
